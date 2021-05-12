@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import './App.css';
 import {OnOff} from "./components/OnOff/OnOff";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
-import Accordion from "./components/Accordion/Accordion";
 import {Select} from "./components/Select/Select";
 import UnControlledAccordion from "./components/UnControlledAccordion/UnControlledAccordion";
+import MemoizedAccordion from "./components/Accordion/Accordion";
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className={'App'}>
       <OnOff on={switchOn} onChange={setSwitchOn} />
-      <Accordion titleValue={'Menu'}
+      <MemoizedAccordion titleValue={'Menu'}
                  collapsed={accordionCollapsed}
                  onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}
                  items={

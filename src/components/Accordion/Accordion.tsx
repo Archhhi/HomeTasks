@@ -16,7 +16,7 @@ export type AccordionPropsType = {
   items: ItemType[]
 }
 
-function Accordion(props: AccordionPropsType) {
+function Accordion (props: AccordionPropsType) {
   return (
     <div>
       <AccordionTitle title={props.titleValue}
@@ -26,6 +26,7 @@ function Accordion(props: AccordionPropsType) {
     </div>
   )
 }
+const MemoizedAccordion = React.memo(Accordion)
 
 type AccordionTitlePropsType = {
   title: string
@@ -53,4 +54,4 @@ function AccordionBody(props: AccordionBodyPropsType) {
   )
 }
 
-export default Accordion;
+export default MemoizedAccordion;
