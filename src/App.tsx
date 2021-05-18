@@ -5,6 +5,7 @@ import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {Select} from "./components/Select/Select";
 import UnControlledAccordion from "./components/UnControlledAccordion/UnControlledAccordion";
 import MemoizedAccordion from "./components/Accordion/Accordion";
+import Clock from "./components/Clock/Clock";
 
 function App() {
 
